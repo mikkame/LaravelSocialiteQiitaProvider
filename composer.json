@@ -1,0 +1,28 @@
+{
+    "name": "mikkame/laravel-socialite-qiita-provider",
+    "description": "Qiita OAuth1 Provider for Laravel Socialite",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mikkame",
+            "email": "mikami@tecpresso.co.jp"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mikkame\\QiitaSocialiteProvider\\": "src/"
+        }
+    },
+    "scripts": {
+         "test": "vendor/bin/phpunit"
+     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mikkame\\QiitaSocialiteProvider\\QiitaServiceProvider"
+            ]
+        }
+    }
+}
